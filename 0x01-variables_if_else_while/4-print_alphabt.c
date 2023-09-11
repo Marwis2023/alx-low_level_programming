@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * main - A program that prints alphabets in lowercase and omit some
@@ -8,17 +10,16 @@
 
 int main(void)
 {
-	char letters = 'a';
+	int letters;
 
-	while (letters <= 'z')
+	for (letters = 97; letters < 123; letters++)
 	{
-		if (letters != 'q' && letters != 'e')
+		if (letters != 101 && letters != 113)
 		{
 			putchar(letters);
-			letters++;
 		}
-		putchar('\n');
 	}
+	putchar('\n');
 
 	return (0);
 }
